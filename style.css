@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.topHeading p {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 40px;
+}
+.topHeading p a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 700;
+}
+/* css for nav bar  */
+.navBar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    margin: 15px;
+}
+.navBar nav .logo {
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: "Iceland", serif;
+}
+.navBar nav .navMenu ul {
+    list-style: none;
+    display: flex;
+}
+.navBar nav .navMenu ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 14px;
+}
+.navBar nav .navMenu ul li a:hover {
+    text-decoration: underline;
+    color: orangered;
+    border-radius: 30px;
+}
+/* css for nav search  */
+.navBar nav .navSearch {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    align-items: center;
+    padding-left: 20px;
+}
+.navBar nav .navSearch > input{
+    border: none;
+    border-radius: 30px;
+    background-color: #f0f0f0;
+    padding: 12px 10px;
+    outline: none;
+    width: 220px;
+}
+.navBar nav .navIcons{
+    display: flex;
+    flex-direction: row;
+}
+.navBar nav .navIcons > span {
+    margin: 0 3px;
+}
+/* css for hero section  */
+.heroSection {
+    background-color: #f0f0f0;
+}
+.heroSection .heroContainer{
+    display: flex;
+    margin: 0 25px;
+    padding: 0 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    /* border: 2px solid red; */
+}
+.heroSection .heroContainer .leftHeroSection{
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 40%;
+    margin-right: 30px;
+}
+.heroSection .heroContainer .leftHeroSection > h1 {
+    font-family:"Anton", serif;
+  font-weight: 500;
+  font-size: 40px;
+  font-style: normal;
+}
+.leftHeroSection > p{
+    font-size: 14px;
+    font-family:sans-serif;
+    
+}
+.leftHeroSection > button{
+    background-color: black;
+    color:white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-top: 10px;
+    width:170px;
+    border: none;
+}
+.leftHeroSection > button:hover{
+    background-color: orangered;
+}
+/* css for stats  */
+.leftHeroSection > .stats{
+    display: flex;
+    margin-top:90px;
+    /* border: 2px solid; */
+}
+.stats > .stats1, .stats2, .stats3{ 
+    margin: 0 20px;
+    font-size: 20px;
+}
+/* css for right side of hero section banner img  */
+.heroSection .heroContainer .rightHeroSection > img{
+    margin-left: 25px;
+    width: 80%;
+    /* border: 2px solid; */
+    display: block;
+}
+/* css for brands logo banner  */
+.brandsBanner ul {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.brandsBanner ul li{
+    padding: 10px;
+    list-style: none;
+}
+.brandsBanner ul li:nth-child(4) > img{
+    width: 140px;
+    height: 90px;
+}
+.brandsBanner ul li:nth-child(5) > img{
+    width: 225px;
+    height: 62px;
+}
+/* css for products catalogue  */
+.productsCatalogue > h2{
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 40px 0;
+}
+.productsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    cursor: pointer; 
+}
+.productsContainer img{
+    border-radius: 10px;
+}
+.rating{
+    display: flex;
+}
+.rating > span  {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px 10px;
+}
+/* css for view more products button  */
+.productsCatalogue .viewProductsBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.productsCatalogue .viewProductsBtn > button {
+    font-size: 1rem;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.viewProductsBtn > button:hover{
+    background-color: orangered;
+}
+.productsCatalogue > hr{
+   margin: 0 5%;
+   height:2px;
+   border: none;
+   background-color: #d6d6d6;
+}
+/* css for best sellers section  */
+.topSelling > h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 40px 0;
+}
+.topSelling > .topProducts {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    cursor: pointer;
+}
+.topSelling .viewProductsBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.topSelling > .viewProductsBtn > button {
+    font-size: 1rem;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+} 
+.viewProductsBtn > button:hover{
+    background-color: orangered;
+}
+ /* css for style categories section  */
+ .styleCategories{
+    margin: 0 10%;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 60px 20px;
+ }
+ .styleCategories > h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+    padding-top: 10px;
+ }
+ .categoriesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center; 
+  justify-content: center;
+ }
+
+.categoriesContainer  .category1{
+    background-image: url(./assets/images/image\ 11.png);
+    width: 26rem;
+    height: 18rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    font-size: 2rem;
+    padding: 20px;
+}
+.categoriesContainer  .category2{
+    background-image: url(./assets/images/image\ 12.png);
+    width: 40rem;
+    height: 18rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    font-size: 2rem;
+    padding: 20px;
+}
+.categoriesContainer  .category3{
+    background-image: url(./assets/images/image\ 13.png);
+    width: 40rem;
+    height: 18rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    font-size: 2rem;
+    padding: 20px;
+}
+.categoriesContainer  .category4{
+    background-image: url(./assets/images/image\ 14.png);
+    width: 26rem;
+    height: 18rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+/* css for reviews section  */
+.reviewSection > h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+.reviewSection > .customerReview{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid; */
+    margin: 1% 10%;
+    gap: 15px;
+}
+.customerReview > .review1,.review2,.review3,.review4,.review5,.review6 {
+    width: 30%;
+    border: 2px solid #d6d6d6;
+    border-radius: 20px;
+    padding: 20px;
+}
+.customerReview .userFont{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.reviewSection > .viewCommentsBtn{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.reviewSection > .viewCommentsBtn > button {
+    font-size: 1rem;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.viewCommentsBtn > button:hover{
+    background-color: orangered;
+}
+
+/* css for footer section  */
+.footerSection{
+    background-color: #d6d6d6;
+}
+.newsLetterContainer{
+    position: relative;
+    bottom: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10%;
+    padding: 40px 10px;
+    width: 70%;
+    border-radius: 20px;
+}
+.newsLetterContainer > .leftPortion {
+    font-size: 2.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    text-align: start;
+    width: 40%;
+    
+}
+.rightPortion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rightPortion > .emailDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+.emailDiv > input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-right: 25px;
+    border-radius: 20px;
+}
+.rightPortion > .subscribeBtn > button {
+    border: none;
+    padding: 8px 80px;
+    margin: 10px 0;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 1rem;
+}
+.subscribeBtn > button:hover{
+    background-color: orangered;
+}
+
+.footerSection > .footerContainer {
+    /* border: 2px solid; */
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10%;
+    gap: 10px;
+}
+.firstDiv,.secondDiv,.thirdDiv,.fourthDiv{
+    /* border: 2px solid; */
+    width: 25%;
+    margin: 15px;
+    
+}
+.firstDiv > ul,.secondDiv > ul li,.thirdDiv > ul li,.fourthDiv > ul li{
+    list-style: none;
+    padding: 8px 0;
+}
+.firstDiv > ul {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 25px;
+}
+.firstDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.firstDiv > ul .fa-brands{
+    font-size: 35px;
+}
+footer > .copyright{
+   text-align: center;
+   word-spacing: 2px;
+   padding: 5px;
+   background-color: black;
+   color: orange;
+
+}
+
